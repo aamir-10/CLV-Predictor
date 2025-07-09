@@ -1,6 +1,6 @@
 # 💰 Customer Lifetime Value Predictor
 
-An **AI-powered** web application that helps businesses estimate the **potential lifetime value** of a customer based on purchase history, frequency, and behavioral patterns.
+An **AI-powered** web application that helps businesses estimate the **potential lifetime value** of a customer based on purchase history, frequency, and behavioral patterns. Built using **Flask** for the backend and HTML/CSS/JavaScript for the frontend, it utilizes an **XGBoost** machine learning model trained on real-world retail data to generate actionable business insights.
 
 ![Homepage](Snapshots/hero.png)
 
