@@ -125,33 +125,6 @@ html {
 }
 
 
-/*RESPONSIVE HERO*/
-@media screen and (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    padding: 2rem;
-    text-align: center;
-  }
-
-  .hero-image img {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-
-  .hero-text {
-    max-width: 100%;
-  }
-
-  .hero-text h1 {
-    font-size: 2rem;
-  }
-
-  .cta-button {
-    padding: 0.9rem 2rem;
-  }
-}
-
 
 /*INFO BOX*/
 .info-box {
@@ -368,16 +341,6 @@ form select:focus {
   }
 }
 
-/* Responsive */
-@media screen and (max-width: 600px) {
-  .predictor-container {
-    padding: 2rem 1.2rem;
-  }
-
-  .submit-btn {
-    width: 100%;
-  }
-}
 
 
 /* METRICS SECTION */
@@ -501,4 +464,124 @@ form select:focus {
 
 .footer-icons a:hover {
   transform: scale(1.2);
+}
+
+/* MOBILE RESPONSIVENESS */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .features {
+    padding: 2rem 1.5rem;
+  }
+
+  .features-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .predictor {
+    padding: 3rem 1rem;
+  }
+
+  .predictor-container {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .result-box {
+    width: 100%;
+    margin: 2rem auto;
+    padding: 1.5rem 1rem;
+  }
+
+  .metrics-section {
+    padding: 2rem 1.5rem;
+  }
+
+  .metrics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .metric-card {
+    text-align: center;
+  }
+
+  .site-footer {
+    padding: 1.5rem 1rem;
+  }
+
+  .footer-icons {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .feature-card h3,
+  .metric-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .feature-card p,
+  .metric-card p {
+    font-size: 0.9rem;
+  }
+
+  .info-box {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .footer-text p:first-child {
+    font-size: 1rem;
+  }
+
+  .footer-slogan {
+    font-size: 0.85rem;
+  }
 }
