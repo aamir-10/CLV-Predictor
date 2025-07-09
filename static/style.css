@@ -466,6 +466,10 @@ form select:focus {
   transform: scale(1.2);
 }
 
+
+/* MOBILE RESPONSIVENESS */
+/* Existing styles remain unchanged */
+
 /* MOBILE RESPONSIVENESS */
 @media screen and (max-width: 768px) {
   .navbar {
@@ -480,7 +484,7 @@ form select:focus {
   }
 
   .hero {
-    flex-direction: column;
+    flex-direction: row;
     padding: 2rem 1.5rem;
   }
 
@@ -532,10 +536,15 @@ form select:focus {
   }
 
   .metrics-grid {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
   }
 
   .metric-card {
+    width: 100%;
+    max-width: 300px;
     text-align: center;
   }
 
