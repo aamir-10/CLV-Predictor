@@ -1,67 +1,76 @@
-# Customer Lifetime Value Predictor
+# 💰 Customer Lifetime Value Predictor
 
-An AI-powered web application that helps businesses estimate the potential lifetime value of a customer based on purchase history, frequency, and behavioral patterns.
+An **AI-powered** web application that helps businesses estimate the **potential lifetime value** of a customer based on purchase history, frequency, and behavioral patterns.
 
 ![Homepage](Snapshots/hero.png)
 
-## Features
+## ✨ Features
 
-- Predict customer CLV using machine learning (XGBoost)
-- Input form to enter transactional data
-- Visualize key customer metrics like Recency, Frequency, Spend
-- Responsive and modern UI built with HTML, CSS, and JavaScript
+- 🤖 Predict customer CLV using machine learning (XGBoost)  
+- 🧾 Input form to enter transactional data  
+- 📊 Visualize key customer metrics like **Recency**, **Frequency**, and **Spend**  
+- 💻 Responsive and modern UI built with **HTML, CSS, and JavaScript**
 
-### CLV Prediction Form
+### 🧠 CLV Prediction Form
 ![Dashboard](Snapshots/form.png)
 
-- Interactive form and real-time prediction results
+- 🖱️ Interactive form and real-time prediction results
 
-### Key Metrics Explained
+### 📌 Key Metrics Explained
 
-- **Recency**: Days since last purchase  
-- **Frequency**: Number of purchases made  
-- **Monetary Value**: Total spend etc...
+- ⏱️ **Recency**: Days since last purchase  
+- 🔁 **Frequency**: Number of purchases made  
+- 💸 **Monetary Value**: Total spend etc...
 
 ![Metrics](Snapshots/footer.png)
 
-### Tech Stack
+---
 
-- **Frontend**: HTML, CSS, JavaScript  
-- **Backend**: Flask (Python)
-- **Model**: XGBoost (trained on Online Retail dataset)
+### 🛠️ Tech Stack
 
-## Getting Started
+- 🧩 **Frontend**: HTML, CSS, JavaScript  
+- 🐍 **Backend**: Flask (Python)  
+- 📈 **Model**: XGBoost (trained on Online Retail dataset)
 
-### 1. Clone the Repository
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/aamir-10/CustomerLifetimeValuePredictor.git
 cd CustomerLifetimeValuePredictor
 ```
 
-### 2. Setup Environment
+### 2️⃣ Setup Environment
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Run the App
+### 3️⃣ Run the App
 
 ```bash
 python app.py
 ```
 
-## Deployment
+---
 
-This app can be deployed on platforms like **Render** using Gunicorn.
+## ☁️ Deployment
 
-### Start Command (for production)
-```
+This app has been deployed on **Render** using **Gunicorn**.
+
+### ✅ Start Command (for production)
+
+```bash
 gunicorn app:app
 ```
 
-## Live Demo
+---
 
-Try the live app here: [CLV Predictor Live](https://clv-predictor.onrender.com/)
+## 🌐 Live Demo
+
+Try the live app here: 👉 [CLV Predictor Live](https://clv-predictor.onrender.com/)
 
 ---
