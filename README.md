@@ -14,7 +14,7 @@ An **AI-powered** web application that helps businesses estimate the **potential
 ### 🧠 CLV Prediction Form
 ![Dashboard](Snapshots/form.png)
 
-- 🖱️ Interactive form and real-time prediction results
+-  Interactive form and real-time prediction results
 
 ### 📌 Key Metrics Explained
 
