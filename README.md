@@ -16,15 +16,13 @@ An AI-powered web application that helps businesses estimate the potential lifet
 
 - Interactive form and real-time prediction results
 
-### Visualizations
-
-- Colored metrics and dynamic results
-
 ### Key Metrics Explained
 
 - **Recency**: Days since last purchase  
 - **Frequency**: Number of purchases made  
-- **Monetary Value**: Total spend  
+- **Monetary Value**: Total spend etc...
+
+![Metrics](Snapshots/footer.png)
 
 ### Tech Stack
 
