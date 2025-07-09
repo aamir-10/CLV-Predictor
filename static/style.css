@@ -468,9 +468,7 @@ form select:focus {
 
 
 /* MOBILE RESPONSIVENESS */
-/* Existing styles remain unchanged */
 
-/* MOBILE RESPONSIVENESS */
 @media screen and (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -484,13 +482,15 @@ form select:focus {
   }
 
   .hero {
-    flex-direction: row;
+    flex-direction: column;
     padding: 2rem 1.5rem;
+    text-align: center;
   }
 
   .hero-image img {
     width: 100%;
     max-width: 100%;
+    margin-bottom: 1.5rem;
   }
 
   .hero-text {
@@ -508,7 +508,7 @@ form select:focus {
 
   .feature-card {
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
   }
 
   .predictor {
@@ -536,10 +536,10 @@ form select:focus {
   }
 
   .metrics-grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    justify-items: center;
   }
 
   .metric-card {
@@ -592,5 +592,9 @@ form select:focus {
 
   .footer-slogan {
     font-size: 0.85rem;
+  }
+
+  .metrics-grid {
+    grid-template-columns: 1fr;
   }
 }
