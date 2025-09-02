@@ -472,37 +472,26 @@ form select:focus {
 .footer-icons a:hover {
   transform: scale(1.2);
 }
-/* Standard 15–16" laptops (1366px–1440px wide) */
-@media screen and (max-width: 1440px) {
-  .hero {
-    padding: 3rem 4rem;
-    gap: 3rem;
-  }
 
-  .hero-image img {
-    width: 500px;
-  }
-}
 
-/* Smaller laptops (≤1200px wide) */
 @media screen and (max-width: 1366px) {
   .hero {
-    padding: 3.5rem 2rem;  
+    flex-direction: row;  
     gap: 2rem;
+    padding: 3rem 2rem;
   }
 
   .hero-image img {
-    max-width: 450px;  
+    max-width: 450px;
   }
 
   .hero-text {
-    max-width: 600px;  
+    max-width: 600px;
   }
 }
 
 
 /* MOBILE RESPONSIVENESS */
-
 @media screen and (max-width: 768px) {
   .navbar {
     flex-direction: column;
