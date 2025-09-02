@@ -11,6 +11,13 @@ body {
   color: #333;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -464,6 +471,35 @@ form select:focus {
 
 .footer-icons a:hover {
   transform: scale(1.2);
+}
+/* Standard 15–16" laptops (1366px–1440px wide) */
+@media screen and (max-width: 1440px) {
+  .hero {
+    padding: 3rem 4rem;
+    gap: 3rem;
+  }
+
+  .hero-image img {
+    width: 500px;
+  }
+}
+
+/* Smaller laptops (≤1200px wide) */
+@media screen and (max-width: 1200px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 2.5rem 2rem;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
 }
 
 
