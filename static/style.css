@@ -485,20 +485,18 @@ form select:focus {
 }
 
 /* Smaller laptops (≤1200px wide) */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1366px) {
   .hero {
-    flex-direction: column;
-    text-align: center;
-    padding: 2.5rem 2rem;
+    padding: 3.5rem 2rem;  
+    gap: 2rem;
   }
 
   .hero-image img {
-    width: 100%;
-    max-width: 450px;
+    max-width: 450px;  
   }
 
   .hero-text {
-    max-width: 100%;
+    max-width: 600px;  
   }
 }
 
