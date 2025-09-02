@@ -29,134 +29,126 @@
 
   <!-- Hero Section -->
   <section class="hero" id="home" data-aos="fade-up">
-    <div class="container">
-      <div class="hero-image">
-        <img src="{{ url_for('static', filename='home.png') }}" alt="CLV Dashboard Illustration">
-      </div>
-      <div class="hero-text">
-        <h1><span class="gradient-text">Customer Lifetime Value</span></h1>
-        <h2>AI-Powered Prediction Engine</h2>
+    <div class="hero-image">
+      <img src="{{ url_for('static', filename='home.png') }}" alt="CLV Dashboard Illustration">
+    </div>
+    <div class="hero-text">
+      <h1><span class="gradient-text">Customer Lifetime Value</span></h1>
+      <h2>AI-Powered Prediction Engine</h2>
 
-        <!-- Info Box -->
-        <section class="info-box">
-          <p>
-            Estimate the lifetime value of your customers using an advanced machine learning technique.
-            Here, the model analyzes <strong>past purchases</strong>, <strong>behavior patterns</strong>, and <strong>customer demographics</strong>
-            to help businesses make <strong>informed decisions</strong> for their growth.
-          </p>
-        </section>
+      <!-- Info Box -->
+      <section class="info-box">
+        <p>
+          Estimate the lifetime value of your customers using an advanced machine learning technique.
+          Here, the model analyzes <strong>past purchases</strong>, <strong>behavior patterns</strong>, and <strong>customer demographics</strong>
+          to help businesses make <strong>informed decisions</strong> for their growth.
+        </p>
+      </section>
 
-        <a href="#Predictor" class="cta-button">Predict Now</a>
-      </div>
+      <a href="#Predictor" class="cta-button">Predict Now</a>
     </div>
   </section>
 
   <!-- Features Section -->
   <section class="features" id="Features" data-aos="fade-up">
-    <div class="container">
-      <h2 class="section-title">Features</h2>
-      <div class="features-container">
-        <div class="feature-card" data-aos="zoom-in" data-aos-delay="100">
-          <img src="https://img.icons8.com/ios-filled/50/bar-chart.png" alt="CLV Estimation Icon" class="feature-icon" />
-          <h3>CLV Estimation</h3>
-          <p>Predict future revenue from customers based on purchase history and behavior.</p>
-        </div>
-        <div class="feature-card" data-aos="zoom-in" data-aos-delay="200">
-          <img src="https://img.icons8.com/ios-filled/50/time-machine.png" alt="Recency Analysis Icon" class="feature-icon" />
-          <h3>Recency Tracking</h3>
-          <p>Identify how recently a customer purchased to gauge loyalty and churn risk.</p>
-        </div>
-        <div class="feature-card" data-aos="zoom-in" data-aos-delay="300">
-          <img src="https://img.icons8.com/ios-filled/50/graph-report.png" alt="Frequency Insights Icon" class="feature-icon" />
-          <h3>Frequency Insights</h3>
-          <p>Measure how often purchases are made to categorize customer engagement.</p>
-        </div>
-        <div class="feature-card" data-aos="zoom-in" data-aos-delay="400">
-          <img src="https://img.icons8.com/ios-filled/50/country.png" alt="Regional Segmentation Icon" class="feature-icon" />
-          <h3>Regional Segmentation</h3>
-          <p>Use country-wise patterns to enhance targeting and campaign effectiveness.</p>
-        </div>
+    <h2 class="section-title">Features</h2>
+    <div class="features-container">
+      <div class="feature-card" data-aos="zoom-in" data-aos-delay="100">
+        <img src="https://img.icons8.com/ios-filled/50/bar-chart.png" alt="CLV Estimation Icon" class="feature-icon" />
+        <h3>CLV Estimation</h3>
+        <p>Predict future revenue from customers based on purchase history and behavior.</p>
+      </div>
+      <div class="feature-card" data-aos="zoom-in" data-aos-delay="200">
+        <img src="https://img.icons8.com/ios-filled/50/time-machine.png" alt="Recency Analysis Icon" class="feature-icon" />
+        <h3>Recency Tracking</h3>
+        <p>Identify how recently a customer purchased to gauge loyalty and churn risk.</p>
+      </div>
+      <div class="feature-card" data-aos="zoom-in" data-aos-delay="300">
+        <img src="https://img.icons8.com/ios-filled/50/graph-report.png" alt="Frequency Insights Icon" class="feature-icon" />
+        <h3>Frequency Insights</h3>
+        <p>Measure how often purchases are made to categorize customer engagement.</p>
+      </div>
+      <div class="feature-card" data-aos="zoom-in" data-aos-delay="400">
+        <img src="https://img.icons8.com/ios-filled/50/country.png" alt="Regional Segmentation Icon" class="feature-icon" />
+        <h3>Regional Segmentation</h3>
+        <p>Use country-wise patterns to enhance targeting and campaign effectiveness.</p>
       </div>
     </div>
   </section>
 
   <!-- Predictor Section -->
   <section class="predictor" id="Predictor" data-aos="fade-up">
-    <div class="container">
-      <h2 class="section-title">Predict Customer Lifetime Value</h2>
-      <div class="predictor-container">
-        <form id="clv-form">
-          <div class="form-grid">
-            <label>
-              First Purchase Date
-              <input type="date" name="first_purchase" required>
-            </label>
-            <label>
-              Last Purchase Date
-              <input type="date" name="last_purchase" required>
-            </label>
-            <label>
-              Total Orders
-              <input type="number" name="total_orders" min="1" required>
-            </label>
-            <label>
-              Total Quantity Purchased
-              <input type="number" name="total_quantity" min="1" required>
-            </label>
-            <label>
-              Total Spend (₹)
-              <input type="number" step="0.01" name="total_spend" required>
-            </label>
-            <label>
-              Country
-              <select name="country" required>
-                <option value="">Select Country</option>
-                <option value="United Kingdom">United Kingdom</option>
-                <option value="Germany">Germany</option>
-                <option value="France">France</option>
-                <option value="Netherlands">Netherlands</option>
-                <option value="Switzerland">Switzerland</option>
-                <option value="Spain">Spain</option>
-                <option value="Others">Others</option>
-              </select>
-            </label>
-          </div>
-          <button type="submit" class="submit-btn">Predict CLV</button>
-        </form>
-      </div>
-      <div id="result" class="result-box"></div>
+    <h2 class="section-title">Predict Customer Lifetime Value</h2>
+    <div class="predictor-container">
+      <form id="clv-form">
+        <div class="form-grid">
+          <label>
+            First Purchase Date
+            <input type="date" name="first_purchase" required>
+          </label>
+          <label>
+            Last Purchase Date
+            <input type="date" name="last_purchase" required>
+          </label>
+          <label>
+            Total Orders
+            <input type="number" name="total_orders" min="1" required>
+          </label>
+          <label>
+            Total Quantity Purchased
+            <input type="number" name="total_quantity" min="1" required>
+          </label>
+          <label>
+            Total Spend (₹)
+            <input type="number" step="0.01" name="total_spend" required>
+          </label>
+          <label>
+            Country
+            <select name="country" required>
+              <option value="">Select Country</option>
+              <option value="United Kingdom">United Kingdom</option>
+              <option value="Germany">Germany</option>
+              <option value="France">France</option>
+              <option value="Netherlands">Netherlands</option>
+              <option value="Switzerland">Switzerland</option>
+              <option value="Spain">Spain</option>
+              <option value="Others">Others</option>
+            </select>
+          </label>
+        </div>
+        <button type="submit" class="submit-btn">Predict CLV</button>
+      </form>
     </div>
+    <div id="result" class="result-box"></div>
   </section>
 
   <!-- Key Metrics Section -->
   <section class="metrics-section" id="Metrics" data-aos="fade-up">
-    <div class="container">
-      <h2 class="section-title">Key Metrics</h2>
-      <div class="metrics-grid">
-        <div class="metric-card" data-aos="fade-up" data-aos-delay="100">
-          <img src="https://img.icons8.com/ios-filled/50/calendar.png" alt="Recency Icon" class="feature-icon" />
-          <h3>Recency</h3>
-          <p>Days since last purchase. Customers who bought recently are more likely to respond to new offers.</p>
-          <div class="pro-tip"><strong>Pro Tip:</strong> Lower recency = higher engagement potential</div>
-        </div>
-        <div class="metric-card" data-aos="fade-up" data-aos-delay="200">
-          <img src="https://img.icons8.com/ios-filled/50/recurring-appointment.png" alt="Frequency Icon" class="feature-icon" />
-          <h3>Frequency</h3>
-          <p>How often purchases are made. Frequent buyers typically have higher lifetime value.</p>
-          <div class="pro-tip"><strong>Pro Tip:</strong> More purchases = stronger customer relationship</div>
-        </div>
-        <div class="metric-card" data-aos="fade-up" data-aos-delay="300">
-          <img src="https://img.icons8.com/ios-filled/50/money.png" alt="Monetary Value Icon" class="feature-icon" />
-          <h3>Monetary Value</h3>
-          <p>Total spend from the customer. High spenders are valuable but may be harder to retain.</p>
-          <div class="pro-tip"><strong>Pro Tip:</strong> Combine with frequency for best insights</div>
-        </div>
-        <div class="metric-card" data-aos="fade-up" data-aos-delay="400">
-          <img src="https://img.icons8.com/ios-filled/50/combo-chart.png" alt="Purchase Pattern Icon" class="feature-icon" />
-          <h3>Purchase Patterns</h3>
-          <p>Consistency and timing between purchases. Regular patterns predict future behavior.</p>
-          <div class="pro-tip"><strong>Pro Tip:</strong> Look for consistent intervals between purchases</div>
-        </div>
+    <h2 class="section-title">Key Metrics</h2>
+    <div class="metrics-grid">
+      <div class="metric-card" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://img.icons8.com/ios-filled/50/calendar.png" alt="Recency Icon" class="feature-icon" />
+        <h3>Recency</h3>
+        <p>Days since last purchase. Customers who bought recently are more likely to respond to new offers.</p>
+        <div class="pro-tip"><strong>Pro Tip:</strong> Lower recency = higher engagement potential</div>
+      </div>
+      <div class="metric-card" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://img.icons8.com/ios-filled/50/recurring-appointment.png" alt="Frequency Icon" class="feature-icon" />
+        <h3>Frequency</h3>
+        <p>How often purchases are made. Frequent buyers typically have higher lifetime value.</p>
+        <div class="pro-tip"><strong>Pro Tip:</strong> More purchases = stronger customer relationship</div>
+      </div>
+      <div class="metric-card" data-aos="fade-up" data-aos-delay="300">
+        <img src="https://img.icons8.com/ios-filled/50/money.png" alt="Monetary Value Icon" class="feature-icon" />
+        <h3>Monetary Value</h3>
+        <p>Total spend from the customer. High spenders are valuable but may be harder to retain.</p>
+        <div class="pro-tip"><strong>Pro Tip:</strong> Combine with frequency for best insights</div>
+      </div>
+      <div class="metric-card" data-aos="fade-up" data-aos-delay="400">
+        <img src="https://img.icons8.com/ios-filled/50/combo-chart.png" alt="Purchase Pattern Icon" class="feature-icon" />
+        <h3>Purchase Patterns</h3>
+        <p>Consistency and timing between purchases. Regular patterns predict future behavior.</p>
+        <div class="pro-tip"><strong>Pro Tip:</strong> Look for consistent intervals between purchases</div>
       </div>
     </div>
   </section>
